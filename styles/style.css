@@ -1,11 +1,12 @@
 .header {
   margin: 92px 24px 96px 24px;
-  display: grid;
-  grid-template-columns: 1fr 148px 1fr;
+  display: flex;
+  
 }
 
 .header__menu {
   align-self: center;
+  
 }
 
 .header__links-list {
@@ -17,6 +18,7 @@
   padding-top: 44px;
   padding-left: 26px;
   padding-bottom: 40px;
+  margin-right: 36px;
   
 }
 
@@ -29,13 +31,19 @@
   border-bottom: 1px solid #000000;
 }
 
-.header__link_active .header__links-list {
-  
-}
+
 
 .header__logo {
   display: block;
   width: 148px;
+  margin-right: 184px;
+  
+}
+
+.header__logo-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__address {
@@ -51,5 +59,212 @@
 
 .header__address a {
   text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
+
+.cover {
+  height: 100%;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-bottom: 135px;
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / .6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.cover__title {
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  padding: 165px 50px 135px 50px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 30px;
+  position: relative;
+  z-index: 1;
+  
+  
+}
+
+.aligned-text {
+  display: block;
+  text-align: left;
+
+
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  margin-right: 23px;
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: right;
+
+  
+}
+
+
+.no-letter-spacing {
+  letter-spacing: 0px;
+}
+
+.letter-spacing-extended .aligned-text_right {
+  margin-right: 20px;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cover__description-text {
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  word-spacing: 20px;
+  width: 650px;
+  z-index: 1;
+
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  font-size: 22px;
+  line-height: 1.17;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 1);
+  
+}
+
+.lots {
+  max-height: 692px;
+  margin-bottom: 146px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.lots__heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 27px;
+  margin-left: 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 1052px;
+  max-height: 563px;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.lots__card-list-item {
+  list-style: none;
+  width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
+  background-color: blueviolet;
+  flex-direction: row;
+
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  
+}
+
+.card__title {
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 254px;
+  min-height: 82px;
+  z-index: 1;
+  margin-top: 51px;
+  
+}
+
+.card__text {
+  color:rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 254px;
+  min-height: 144px;
+  z-index: 1;
+  margin-bottom: 48px;
+}
+
+.card__title span {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.lots__look-more-link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.17;
+  width: 192px;
+  margin-left: 40px;
   border-bottom: 1px solid #000000;
 }
