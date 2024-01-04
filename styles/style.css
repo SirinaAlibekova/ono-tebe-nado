@@ -1,7 +1,7 @@
 .header {
   margin: 92px 24px 96px 24px;
   display: grid;
-  grid-template-columns: 1fr 148px 1fr; 
+  grid-template-columns: 1fr 148px 1fr;
 }
 
 .header__menu {
@@ -23,7 +23,7 @@
 }
 
 .header__links-list-item_no-bullit {
-  list-style: none; 
+  list-style: none;
 }
 
 .header__link {
@@ -100,7 +100,7 @@ width: 100%;
 
 .aligned-text_right {
   display: block;
-  text-align: right; 
+  text-align: right;
 }
 
 .letter-spacing-extended {
@@ -141,7 +141,7 @@ width: 100%;
   background-color: transparent;
   color: rgba(255, 255, 255, 1);
   z-index: 1;
-  border: 1px solid rgba(255, 255, 255, 1); 
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .lots {
@@ -212,7 +212,7 @@ width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  position: relative; 
+  position: relative;
 }
 
 .card__title {
@@ -324,7 +324,7 @@ justify-self: start;
   list-style: none;
   display: flex;
   gap: 48px;
-  justify-content: end; 
+  justify-content: end;
 }
 
 .footer__menu-list-item {
